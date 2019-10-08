@@ -19,10 +19,11 @@ for($i=0;$i<count($number_arr);$i++){
 }
 
 // printing the output
-if($nearest==$negative_nearest){
-    echo "Nearest Number to zero is ". $nearest;
-}else{
+if($nearest===abs($negative_nearest)){
     echo "Nearest Numbers to zero are ". $nearest." , ".$negative_nearest;
+   
+}else{
+     echo "Nearest Number to zero is ". $nearest;
 }
 
 
